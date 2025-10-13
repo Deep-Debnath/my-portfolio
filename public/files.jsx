@@ -101,7 +101,7 @@ export const buttons = [
   {
     icon: <SiLinkedin size={22} />,
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/deep-debnath-766/",
+    link: "https://www.linkedin.com/in/deep-debnath-95a300365/",
     hoverBg: "#0077b5",
   },
   {
