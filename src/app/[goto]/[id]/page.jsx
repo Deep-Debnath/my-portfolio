@@ -147,7 +147,7 @@ export default function Content({ params }) {
                   <Box
                     sx={{ display: "flex", alignItems: "center", gap: 1 }}
                     component={Link}
-                    href={"/" + item.link}
+                    href={item.link}
                   >
                     {index === 0 ? (
                       <AlternateEmail sx={{ color: "#00e5ff" }} />
@@ -157,7 +157,7 @@ export default function Content({ params }) {
                     {item.text}
                   </Box>
                 ) : section.id === "1" ? (
-                  <Box component={Link} href={"/" + item.link}>
+                  <Box component={Link} href={item.link}>
                     <Typography
                       sx={{
                         color: "#b2ebf2",
@@ -176,7 +176,7 @@ export default function Content({ params }) {
                 ) : section.id === "2" ? (
                   <Box
                     component={Link}
-                    href={"/" + item.link}
+                    href={item.link}
                     download={"Deep_Debnath_Resume"}
                   >
                     <Typography
