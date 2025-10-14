@@ -1,6 +1,7 @@
 import { ArrowForward } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import { motion, scale } from "framer-motion";
+import Link from "next/link";
 
 const parent = {
   hidden: { opacity: 0 },
@@ -37,6 +38,7 @@ export default function Buttons() {
           {
             <Button
               endIcon={<ArrowForward />}
+              component={Link}
               href={`/${item}/${index}`}
               sx={{
                 border: "2px solid #00ffff",

@@ -26,7 +26,7 @@ export const metadata = {
     title: "Deep Debnath | Frontend Developer Portfolio",
     description:
       "Explore Deep Debnath's projects, skills, and contact details. Built with Next.js and modern UI libraries.",
-    url: "https://your-portfolio.vercel.app",
+    url: "https://my-portfolio-ob9g.vercel.app/",
     siteName: "Deep Debnath Portfolio",
     images: [
       {

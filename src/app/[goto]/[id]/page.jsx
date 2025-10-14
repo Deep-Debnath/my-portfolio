@@ -144,16 +144,20 @@ export default function Content({ params }) {
             <ListItemText
               primary={
                 section.id === "3" ? (
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+                  <Box
+                    sx={{ display: "flex", alignItems: "center", gap: 1 }}
+                    component={Link}
+                    href={"/" + item.link}
+                  >
                     {index === 0 ? (
                       <AlternateEmail sx={{ color: "#00e5ff" }} />
                     ) : (
                       <Smartphone sx={{ color: "#00e5ff" }} />
                     )}
-                    <Link href={item.link}>{item.text}</Link>
+                    {item.text}
                   </Box>
                 ) : section.id === "1" ? (
-                  <Link href={item.link} passHref>
+                  <Box component={Link} href={"/" + item.link}>
                     <Typography
                       sx={{
                         color: "#b2ebf2",
@@ -168,7 +172,28 @@ export default function Content({ params }) {
                     >
                       {item.text}
                     </Typography>
-                  </Link>
+                  </Box>
+                ) : section.id === "2" ? (
+                  <Box
+                    component={Link}
+                    href={"/" + item.link}
+                    download={"Deep_Debnath_Resume"}
+                  >
+                    <Typography
+                      sx={{
+                        color: "#b2ebf2",
+                        fontSize: { xs: "1rem", sm: "1.2rem" },
+                        textShadow: "0 0 10px rgba(0,229,255,0.3)",
+                        textDecoration: "none",
+                        "&:hover": {
+                          textDecoration: "underline",
+                          color: "#00e5ff",
+                        },
+                      }}
+                    >
+                      {item.text}
+                    </Typography>
+                  </Box>
                 ) : (
                   item
                 )
@@ -185,6 +210,7 @@ export default function Content({ params }) {
       >
         <Button
           startIcon={<ArrowBack />}
+          component={Link}
           href="/"
           style={{
             marginTop: "2rem",

@@ -35,12 +35,12 @@ export const contentData = [
     id: "2",
     title: "Resume",
     icon: <Pages sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
-    items: [""],
+    items: [{ text: "Download Resume", link: "+91 9883837801.pdf" }],
   },
   {
     id: "3",
     title: "Contact",
-    icon:<ContactPage sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
+    icon: <ContactPage sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
     items: [
       {
         text: "deepdebnath7432@gmail.com",
@@ -68,27 +68,82 @@ import {
   SiInstagram,
 } from "react-icons/si";
 export const skillsData = [
-  { name: "HTML", Icon: SiHtml5, color: "#FF7B54", info: "Markup language for structuring web pages" },
-  { name: "CSS", Icon: SiCss3, color: "#33A9DC", info: "Stylesheet language for designing websites" },
-  { name: "JavaScript", Icon: SiJavascript, color: "#FFE156", info: "Programming language for dynamic web content" },
-  { name: "React", Icon: SiReact, color: "#7FDBFF", info: "Library for building user interfaces with components" },
-  { name: "Next.js", Icon: SiNextdotjs, color: "#EAEAEA", info: "React framework for SSR, SSG, and routing" },
-  { name: "Redux Toolkit", Icon: SiRedux, color: "#B97FFF", info: "State management library for scalable apps" },
+  {
+    name: "HTML",
+    Icon: SiHtml5,
+    color: "#FF7B54",
+    info: "Markup language for structuring web pages",
+  },
+  {
+    name: "CSS",
+    Icon: SiCss3,
+    color: "#33A9DC",
+    info: "Stylesheet language for designing websites",
+  },
+  {
+    name: "JavaScript",
+    Icon: SiJavascript,
+    color: "#FFE156",
+    info: "Programming language for dynamic web content",
+  },
+  {
+    name: "React",
+    Icon: SiReact,
+    color: "#7FDBFF",
+    info: "Library for building user interfaces with components",
+  },
+  {
+    name: "Next.js",
+    Icon: SiNextdotjs,
+    color: "#EAEAEA",
+    info: "React framework for SSR, SSG, and routing",
+  },
+  {
+    name: "Redux Toolkit",
+    Icon: SiRedux,
+    color: "#B97FFF",
+    info: "State management library for scalable apps",
+  },
   {
     name: "Zustand",
     Icon: () => (
-      <p className="relative md:bottom-4 bottom-3 text-[40px] lg:text-5xl lg:bottom-0 transition-all icon duration-300 group-hover:scale-125 group-hover:brightness-105 group-hover:drop-shadow-[0_0_25px_#00e5ff] drop-shadow-[0_0_30px_#00B06C]">
+      <p className="relative md:bottom-4 bottom-1 text-[40px] lg:text-5xl lg:bottom-0 transition-all icon duration-300 group-hover:scale-125 group-hover:brightness-105 group-hover:drop-shadow-[0_0_25px_#00e5ff] ">
         🐻
       </p>
     ),
     color: "#EAEAEA",
     info: "Lightweight state management using hooks",
   },
-  { name: "TailwindCSS", Icon: SiTailwindcss, color: "#6EE7B7", info: "Utility-first CSS framework for rapid styling" },
-  { name: "Material UI", Icon: SiMui, color: "#6AB7FF", info: "React UI library following Material Design" },
-  { name: "Framer Motion", Icon: SiFramer, color: "#9BE7FF", info: "Animation library for smooth UI motion" },
-  { name: "Git", Icon: SiGit, color: "#FF866B", info: "Version control system for tracking code changes" },
-  { name: "GitHub", Icon: SiGithub, color: "#EAEAEA", info: "Platform for hosting and collaborating on code" },
+  {
+    name: "TailwindCSS",
+    Icon: SiTailwindcss,
+    color: "#6EE7B7",
+    info: "Utility-first CSS framework for rapid styling",
+  },
+  {
+    name: "Material UI",
+    Icon: SiMui,
+    color: "#6AB7FF",
+    info: "React UI library following Material Design",
+  },
+  {
+    name: "Framer Motion",
+    Icon: SiFramer,
+    color: "#9BE7FF",
+    info: "Animation library for smooth UI motion",
+  },
+  {
+    name: "Git",
+    Icon: SiGit,
+    color: "#FF866B",
+    info: "Version control system for tracking code changes",
+  },
+  {
+    name: "GitHub",
+    Icon: SiGithub,
+    color: "#EAEAEA",
+    info: "Platform for hosting and collaborating on code",
+  },
 ];
 
 export const buttons = [
