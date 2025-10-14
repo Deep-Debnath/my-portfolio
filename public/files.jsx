@@ -35,7 +35,7 @@ export const contentData = [
     id: "2",
     title: "Resume",
     icon: <Pages sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
-    items: [{ text: "Download Resume", link: "+91 9883837801.pdf" }],
+    items: [{ text: "Download Resume", link: "/resume.pdf" }],
   },
   {
     id: "3",
