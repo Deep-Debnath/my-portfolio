@@ -22,12 +22,8 @@ export const contentData = [
         link: "https://new-e-cart.vercel.app/",
       },
       {
-        text: "Built with Next.js & MUI",
-        link: "https://new-e-cart.vercel.app/",
-      },
-      {
-        text: "Includes animations, Redux, and live search.",
-        link: "https://new-e-cart.vercel.app/",
+        text: "Gemini Chat App",
+        link: "https://gemini-clone-5csw.vercel.app/",
       },
     ],
   },
