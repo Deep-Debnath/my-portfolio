@@ -25,6 +25,10 @@ export const contentData = [
         text: "Gemini Chat App",
         link: "https://gemini-clone-5csw.vercel.app/",
       },
+      {
+        text: "Workflow App",
+        link: "https://workflow-pabp2okw3-deepvais-projects.vercel.app/",
+      },
     ],
   },
   {
