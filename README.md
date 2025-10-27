@@ -75,5 +75,3 @@ Frontend Developer • React / Next.js / UI / AI Integration
 
 🌐 [Portfolio](https://my-portfolio-ob9g.vercel.app/)  
 💼 [GitHub](https://github.com/Deep-Debnath)
-
----
