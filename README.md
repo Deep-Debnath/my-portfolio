@@ -1,32 +1,79 @@
-# 🌐 Deep Debnath — Portfolio Website
+# 🌐 My Portfolio
 
-A modern and interactive personal portfolio built with **Next.js**, **Mui**, **TailwindCSS**, and **Framer Motion** to showcase my projects, skills, and experience as a Frontend Developer.
+A modern personal **Portfolio Website** built with **Next.js**, **TailwindCSS**, **Mui**, and **Framer Motion** to showcase my skills, projects, and professional background as a **Frontend Developer**.
 
-## 🚀 Features
+---
 
-- Responsive and animated UI using **Framer Motion**
-- Sections: Hero, About, Skills, Projects, Resume, Contact
-- Background image Hero section with overlay details
-- SEO optimized with Open Graph tags
-- Deployed on **Vercel**
+## 🚀 Live Demo
 
-## 🛠️ Tech Stack
+🔗 **[View Portfolio](https://my-portfolio-ob9g.vercel.app/)**
 
-- **Framework:** Next.js (App Router)
-- **Styling:** TailwindCSS + Framer Motion
-- **UI Libraries:** MUI
-- **Deployment:** Vercel
+---
 
-## 🔗 Live Demo
+## 🧠 About the Project
 
-👉 [Visit Portfolio](https://my-portfolio-ob9g.vercel.app/)
+This portfolio is designed to reflect my frontend development skills and projects with a clean and interactive interface.  
+It includes all my recent work, social links, and a downloadable resume.
 
-## 📸 Preview
+### ✨ Features
 
-![Portfolio Preview](/screenshot.png)
+- ⚡ Built using **Next.js (App Router)** for fast and SEO-optimized pages
+- 🎨 Styled with **Tailwind CSS**
+- 🎥 Smooth animations using **Framer Motion**
+- 🧱 Modular and clean component structure
+- 📱 Fully **responsive** design
+- 🧾 Resume download section
+- 💬 Contact form with validation
+- 💻 Project showcase section with live links and GitHub links
 
-## 📫 Contact
+---
 
-**Email:** deepdebnath7432@gmail.com  
-**LinkedIn:** [linkedin.com/in/deep-debnath](https://www.linkedin.com/in/deep-debnath-95a300365/)  
-**GitHub:** [github.com/deep-debnath](https://github.com/Deep-Debnath)
+## 🏗️ Tech Stack
+
+| Category            | Technologies  |
+| ------------------- | ------------- |
+| **Framework**       | Next.js       |
+| **Styling**         | TailwindCSS   |
+| **Animation**       | Framer Motion |
+| **Library**         | Material Ui   |
+| **Deployment**      | Vercel        |
+| **Version Control** | Git + GitHub  |
+
+---
+
+## ⚙️ Setup and Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/Deep-Debnath/my-portfolio.git
+
+# Navigate to the app directory
+cd my-app
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
+
+Open http://localhost:3000 in your browser.
+
+---
+
+## 📸 Screenshots
+
+![Portfolio Screenshot 1](./public/screenshot_1.png)
+![Portfolio Screenshot 2](./public/screenshot_2.png)
+
+---
+
+## 🧑‍💻 Author
+
+**Deep Debnath**  
+Frontend Developer • React / Next.js / UI / AI Integration
+
+🌐 [Portfolio](https://my-portfolio-ob9g.vercel.app/)  
+💼 [GitHub](https://github.com/Deep-Debnath)
+
+---

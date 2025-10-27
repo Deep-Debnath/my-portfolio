@@ -150,7 +150,7 @@ export const buttons = [
   {
     icon: <SiGithub size={22} />,
     label: "GitHub",
-    link: "https://github.com/Deepvai",
+    link: "https://github.com/Deep-Debnath",
     hoverBg: "#171515",
   },
   {
