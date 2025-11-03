@@ -27,7 +27,7 @@ export const contentData = [
       },
       {
         text: "Workflow App",
-        link: "https://workflow-pabp2okw3-deepvais-projects.vercel.app/",
+        link: "https://workflow-gilt-five.vercel.app/",
       },
     ],
   },
@@ -35,7 +35,7 @@ export const contentData = [
     id: "2",
     title: "Resume",
     icon: <Pages sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
-    items: [{ text: "Download Resume", link: "/resume.pdf" }],
+    items: [{ text: "Download Resume", link: "/Deep_Debnath_Resume.pdf" }],
   },
   {
     id: "3",
@@ -156,7 +156,7 @@ export const buttons = [
   {
     icon: <SiLinkedin size={22} />,
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/deep-debnath-95a300365/",
+    link: "https://www.linkedin.com/in/deep-debnath-dev/",
     hoverBg: "#0077b5",
   },
   {
