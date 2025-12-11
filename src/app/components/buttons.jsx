@@ -1,6 +1,6 @@
 import { ArrowForward } from "@mui/icons-material";
 import { Button } from "@mui/material";
-import { motion, scale } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const parent = {

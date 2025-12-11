@@ -60,6 +60,7 @@ import {
   SiGithub,
   SiRedux,
   SiBootstrap,
+  SiPostman,
   SiFramer,
   SiTailwindcss,
   SiReact,
@@ -105,14 +106,10 @@ export const skillsData = [
     info: "State management library for scalable apps",
   },
   {
-    name: "Zustand",
-    Icon: () => (
-      <p className="relative md:bottom-4 bottom-1 text-[40px] lg:text-5xl lg:bottom-0 transition-all icon duration-300 group-hover:scale-125 group-hover:brightness-105 group-hover:drop-shadow-[0_0_25px_#00e5ff] ">
-        🐻
-      </p>
-    ),
+    name: "Postman",
+    Icon: SiPostman,
     color: "#EAEAEA",
-    info: "Lightweight state management using hooks",
+    info: "Postman API Fundamentals",
   },
   {
     name: "TailwindCSS",

@@ -53,11 +53,7 @@ export default function Logo() {
                     className=" lg:text-[55px] text-[40px] transition-all icon duration-300 group-hover:scale-125 group-hover:brightness-105 group-hover:drop-shadow-[0_0_25px_#00e5ff] drop-shadow-[0_0_25px_#00B06C]"
                   />
                   <p
-                    className={`mt-2 ${
-                      name === "Zustand"
-                        ? "relative lg:top-2 md:bottom-5"
-                        : null
-                    } text-sm text-gray-300 group-hover:text-white font-medium`}
+                    className={`mt-2 text-sm text-gray-300 group-hover:text-white font-medium`}
                   >
                     {name}
                   </p>
