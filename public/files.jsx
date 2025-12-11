@@ -29,7 +29,7 @@ export const contentData = [
       {
         text: (
           <>
-            <ShoppingCart className="mr-1"/> New-E-Cart
+            <ShoppingCart className="mr-1" /> New-E-Cart
           </>
         ),
         link: "https://new-e-cart.vercel.app/",
@@ -37,7 +37,7 @@ export const contentData = [
       {
         text: (
           <>
-            <MessageSharp className="mr-1"/> Gemini Chat App
+            <MessageSharp className="mr-1" /> Gemini Chat App
           </>
         ),
         link: "https://gemini-clone-5csw.vercel.app/",
@@ -45,7 +45,7 @@ export const contentData = [
       {
         text: (
           <>
-            <Lan className="mr-1"/> Workflow App
+            <Lan className="mr-1" /> Workflow App
           </>
         ),
         link: "https://workflow-gilt-five.vercel.app/",
@@ -60,7 +60,7 @@ export const contentData = [
       {
         text: (
           <>
-            <Download className="mr-1"/> Get My Resume
+            <Download className="mr-1" /> Get My Resume
           </>
         ),
         link: "/Deep_Debnath_Resume.pdf",
@@ -97,7 +97,10 @@ import {
   SiNextdotjs,
   SiLinkedin,
   SiInstagram,
+  SiAxios,
+  SiTypescript,
 } from "react-icons/si";
+
 export const skillsData = [
   {
     name: "HTML",
@@ -118,10 +121,16 @@ export const skillsData = [
     info: "Programming language for dynamic web content",
   },
   {
+    name: "TypeScript",
+    Icon: SiTypescript,
+    color: "#3178C6",
+    info: "Strongly typed superset of JavaScript",
+  },
+  {
     name: "React",
     Icon: SiReact,
     color: "#7FDBFF",
-    info: "Library for building user interfaces with components",
+    info: "Library for building user interfaces",
   },
   {
     name: "Next.js",
@@ -136,43 +145,36 @@ export const skillsData = [
     info: "State management library for scalable apps",
   },
   {
+    name: "Axios",
+    Icon: SiAxios,
+    color: "#9BE7FF",
+    info: "HTTP client for API communication",
+  },
+  {
     name: "Postman",
     Icon: SiPostman,
-    color: "#EAEAEA",
-    info: "Postman API Fundamentals",
+    color: "#FF6C37",
+    info: "API testing and debugging platform",
   },
   {
     name: "TailwindCSS",
     Icon: SiTailwindcss,
-    color: "#6EE7B7",
-    info: "Utility-first CSS framework for rapid styling",
-  },
-  {
-    name: "Material UI",
-    Icon: SiMui,
-    color: "#6AB7FF",
-    info: "React UI library following Material Design",
-  },
-  {
-    name: "Framer Motion",
-    Icon: SiFramer,
-    color: "#9BE7FF",
-    info: "Animation library for smooth UI motion",
+    color: "#38BDF8",
+    info: "Utility-first CSS framework",
   },
   {
     name: "Git",
     Icon: SiGit,
     color: "#FF866B",
-    info: "Version control system for tracking code changes",
+    info: "Version control for tracking code changes",
   },
   {
     name: "GitHub",
     Icon: SiGithub,
     color: "#EAEAEA",
-    info: "Platform for hosting and collaborating on code",
+    info: "Code hosting and collaboration platform",
   },
 ];
-
 export const buttons = [
   {
     icon: <SiGithub size={22} />,

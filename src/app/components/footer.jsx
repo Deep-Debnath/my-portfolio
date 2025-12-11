@@ -40,14 +40,35 @@ export default function Footer() {
                 gap: { xs: 0.4, md: 1 },
                 color: "#e0e0e0",
                 borderColor: "rgba(255,255,255,0.2)",
+                borderRadius:"5px",
                 textTransform: "none",
+                position: "relative",
+                overflow: "hidden",
+                transition: "transform 0.3s ease, border-color 0.3s ease",
 
-                transition: "all 0.3s ease",
-                "&:hover": {
+                "&::before": {
+                  content: '""',
+                  position: "absolute",
+                  inset: 0,
                   background: hoverBg,
+                  opacity: 0,
+                  transition: "opacity 0.4s ease",
+                  zIndex: 0,
+                },
+
+                "&:hover::before": {
+                  opacity: 1,
+                },
+
+                "&:hover": {
                   color: "#fff",
                   borderColor: "transparent",
                   transform: "scale(1.05)",
+                },
+
+                "& > *": {
+                  position: "relative",
+                  zIndex: 1,
                 },
               }}
             >

@@ -48,10 +48,10 @@ export default function Logo() {
                   className="flex flex-col items-center group cursor-pointer icon "
                 >
                   <Icon
-                    // size={55}
                     color={color}
-                    className=" lg:text-[55px] text-[40px] transition-all icon duration-300 group-hover:scale-125 group-hover:brightness-105 group-hover:drop-shadow-[0_0_25px_#00e5ff] drop-shadow-[0_0_25px_#00B06C]"
+                    className="lg:text-[55px] text-[40px] transition-all duration-300 group-hover:scale-125 drop-shadow-[0_0_10px_rgba(0,229,255,0.25)] group-hover:drop-shadow-[0_0_18px_rgba(0,229,255,0.55)] group-hover:brightness-110"
                   />
+
                   <p
                     className={`mt-2 text-sm text-gray-300 group-hover:text-white font-medium`}
                   >
@@ -90,7 +90,7 @@ export default function Logo() {
                   <Icon
                     color={color}
                     // add class drop-shadow-[0_0_25px_#00B06C] for allways glow
-                    className="text-[40px] transition-all duration-300 group-hover:brightness-105 group-hover:scale-125 group-hover:drop-shadow-[0_0_25px_#00e5ff] "
+                    className="text-[40px] transition-all duration-300 group-hover:brightness-105 group-hover:scale-110 drop-shadow-[0_0_10px_rgba(0,229,255,0.25)] "
                   />
                   <p className="mt-2 text-sm text-gray-300 group-hover:text-white font-medium">
                     {name}
