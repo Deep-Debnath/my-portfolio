@@ -6,7 +6,7 @@ A modern personal **Portfolio Website** built with **Next.js**, **TailwindCSS**,
 
 ## 🚀 Live Demo
 
-🔗 **[View Portfolio](https://my-portfolio-ob9g.vercel.app/)**
+🔗 **[View Portfolio](https://my-portfolio-7432.vercel.app/)**
 
 ---
 
@@ -73,5 +73,5 @@ Open http://localhost:3000 in your browser.
 **Deep Debnath**  
 Frontend Developer • React / Next.js / UI / AI Integration
 
-🌐 [Portfolio](https://my-portfolio-ob9g.vercel.app/)  
+🌐 [Portfolio](https://my-portfolio-7432.vercel.app/)  
 💼 [GitHub](https://github.com/Deep-Debnath)
