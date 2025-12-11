@@ -52,13 +52,16 @@ export default function Buttons() {
                 // textShadow: "0 0 2px #00ffff",
                 boxShadow: "0 0 8px #00ff9f",
                 backgroundColor: "rgba(0,0,0,0.4)",
-                transition: "all 0.3s ease",
+                transition: "all 0.4s ease",
                 "&:hover": {
                   boxShadow:
                     "0 0 25px #00ffff, 0 0 12px #00ff0f, 0 0 3px #00ff0f",
                 },
+                "& .MuiButton-endIcon": {
+                  transition: "transform 0.4s ease",
+                },
                 "&:hover .MuiButton-endIcon": {
-                  transform: "translateX(5px)",
+                  transform: "translateX(8px)",
                 },
               }}
             >

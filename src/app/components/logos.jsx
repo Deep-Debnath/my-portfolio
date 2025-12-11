@@ -92,11 +92,7 @@ export default function Logo() {
                     // add class drop-shadow-[0_0_25px_#00B06C] for allways glow
                     className="text-[40px] transition-all duration-300 group-hover:brightness-105 group-hover:scale-125 group-hover:drop-shadow-[0_0_25px_#00e5ff] "
                   />
-                  <p
-                    className={`mt-2 ${
-                      name === "Zustand" ? "relative bottom-2.5" : ""
-                    } text-sm text-gray-300 group-hover:text-white font-medium`}
-                  >
+                  <p className="mt-2 text-sm text-gray-300 group-hover:text-white font-medium">
                     {name}
                   </p>
                 </motion.div>

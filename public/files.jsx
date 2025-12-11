@@ -1,5 +1,14 @@
 // src/data/contentData.js
-import { ContactPage, Pages, Person, Work } from "@mui/icons-material";
+import {
+  ContactPage,
+  Download,
+  Lan,
+  MessageSharp,
+  Pages,
+  Person,
+  ShoppingCart,
+  Work,
+} from "@mui/icons-material";
 
 export const contentData = [
   {
@@ -7,9 +16,9 @@ export const contentData = [
     title: "About",
     icon: <Person sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
     items: [
-      "Hi, I'm Deep Debnath",
-      "Frontend Developer from West Bengal",
-      "I love React, UI animation, and clean code.",
+      "Hi, I'm Deep Debnath.",
+      "Frontend Developer from West Bengal.",
+      "Passionate about React, UI animation, and clean, modern interfaces.",
     ],
   },
   {
@@ -18,15 +27,27 @@ export const contentData = [
     icon: <Work sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
     items: [
       {
-        text: "New-E-Cart 🛒",
+        text: (
+          <>
+            <ShoppingCart className="mr-1"/> New-E-Cart
+          </>
+        ),
         link: "https://new-e-cart.vercel.app/",
       },
       {
-        text: "Gemini Chat App",
+        text: (
+          <>
+            <MessageSharp className="mr-1"/> Gemini Chat App
+          </>
+        ),
         link: "https://gemini-clone-5csw.vercel.app/",
       },
       {
-        text: "Workflow App",
+        text: (
+          <>
+            <Lan className="mr-1"/> Workflow App
+          </>
+        ),
         link: "https://workflow-gilt-five.vercel.app/",
       },
     ],
@@ -35,7 +56,16 @@ export const contentData = [
     id: "2",
     title: "Resume",
     icon: <Pages sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
-    items: [{ text: "Download Resume", link: "/Deep_Debnath_Resume.pdf" }],
+    items: [
+      {
+        text: (
+          <>
+            <Download className="mr-1"/> Get My Resume
+          </>
+        ),
+        link: "/Deep_Debnath_Resume.pdf",
+      },
+    ],
   },
   {
     id: "3",

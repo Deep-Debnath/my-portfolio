@@ -18,12 +18,10 @@ export default function Content({ params }) {
   const contentId = React.use(params).id;
   const section = contentData.find((item) => item.id === contentId);
 
-  // for ssr error >>
+  // Hydration Fix
   const [hydrated, setHydrated] = useState(false);
-  useEffect(() => {
-    setHydrated(true);
-  }, []);
-  if (!hydrated) return null; //<<
+  useEffect(() => setHydrated(true), []);
+  if (!hydrated) return null;
 
   if (!section) {
     return (
@@ -46,7 +44,7 @@ export default function Content({ params }) {
       sx={{
         minHeight: "100vh",
         width: "100%",
-        background: "linear-gradient(135deg, #000 0%, #00121a 40%, #000 100%)",
+        background: "linear-gradient(140deg, #000, #00141c 40%, #000)",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -55,20 +53,21 @@ export default function Content({ params }) {
         color: "#e0f7fa",
         position: "relative",
         overflow: "hidden",
+        padding: "2rem 0",
       }}
     >
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: [0.4, 0.7, 0.4] }}
-        transition={{ repeat: Infinity, duration: 6 }}
+        animate={{ opacity: [0.3, 0.7, 0.3] }}
+        transition={{ repeat: Infinity, duration: 7 }}
         style={{
           position: "absolute",
-          width: "500px",
-          height: "500px",
+          width: "520px",
+          height: "520px",
           borderRadius: "50%",
           background:
-            "radial-gradient(circle, rgba(0,229,255,0.15) 0%, transparent 70%)",
-          top: "10%",
+            "radial-gradient(circle, rgba(0,229,255,0.18) 0%, transparent 65%)",
+          top: "12%",
           left: "50%",
           transform: "translateX(-50%)",
           filter: "blur(80px)",
@@ -78,7 +77,7 @@ export default function Content({ params }) {
 
       <Box
         component={motion.div}
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
         sx={{
@@ -94,20 +93,19 @@ export default function Content({ params }) {
           variant="h3"
           sx={{
             color: "#00e5ff",
-            fontWeight: "700",
-            fontSize: { xs: "2rem", sm: "3rem" },
-            filter: "drop-shadow(0 0 18px #00e5ff)",
-            position: "relative",
-            bottom: "3px",
+            fontWeight: 700,
+            fontSize: { xs: "2.2rem", sm: "3.4rem" },
+            filter: "drop-shadow(0 0 20px #00e5ff)",
           }}
         >
           {section.icon || "💠"}
         </Typography>
+
         <Typography
           variant="h3"
           sx={{
             color: "#00e5ff",
-            fontWeight: "700",
+            fontWeight: 700,
             textShadow: "0 0 30px #00e5ff",
             letterSpacing: "2px",
             fontSize: { xs: "2rem", sm: "3rem" },
@@ -117,27 +115,27 @@ export default function Content({ params }) {
         </Typography>
       </Box>
 
-      <List
-        sx={{ width: { sm: "100%", xs: "95%" }, maxWidth: "600px", zIndex: 2 }}
-      >
+      <List sx={{ width: "95%", maxWidth: "620px", zIndex: 2 }}>
         {section.items.map((item, index) => (
           <ListItem
             key={index}
             component={motion.div}
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15 * index }}
+            transition={{ delay: 0.18 * index }}
             sx={{
-              bgcolor: "rgba(0, 229, 255, 0.05)",
-              border: "1px solid rgba(0, 229, 255, 0.4)",
-              borderRadius: "12px",
-              mb: 2,
-              p: 2,
-              backdropFilter: "blur(6px)",
+              bgcolor: "rgba(0, 229, 255, 0.06)",
+              border: "1.5px solid rgba(0, 229, 255, 0.35)",
+              borderRadius: "14px",
+              mb: 2.5,
+              p: 2.2,
+              backdropFilter: "blur(8px)",
+              boxShadow: "0 0 12px rgba(0,229,255,0.25)",
+              transition: "0.3s ease",
               "&:hover": {
-                bgcolor: "rgba(0, 229, 255, 0.15)",
-                transform: "scale(1.03)",
-                boxShadow: "0 0 20px #00e5ff77",
+                bgcolor: "rgba(0, 229, 255, 0.12)",
+                transform: "translateY(-4px)",
+                boxShadow: "0 0 25px rgba(0,229,255,0.45)",
               },
             }}
           >
@@ -145,14 +143,23 @@ export default function Content({ params }) {
               primary={
                 section.id === "3" ? (
                   <Box
-                    sx={{ display: "flex", alignItems: "center", gap: 1 }}
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1,
+                      color: "#b2ebf2",
+                      textDecoration: "none",
+                    }}
                     component={Link}
                     href={item.link}
                   >
                     {index === 0 ? (
-                      <AlternateEmail sx={{ color: "#00e5ff" }} />
+                      <AlternateEmail
+                        className="mr-1"
+                        sx={{ color: "#00e5ff" }}
+                      />
                     ) : (
-                      <Smartphone sx={{ color: "#00e5ff" }} />
+                      <Smartphone className="mr-1" sx={{ color: "#00e5ff" }} />
                     )}
                     {item.text}
                   </Box>
@@ -163,10 +170,9 @@ export default function Content({ params }) {
                         color: "#b2ebf2",
                         fontSize: { xs: "1rem", sm: "1.2rem" },
                         textShadow: "0 0 10px rgba(0,229,255,0.3)",
-                        textDecoration: "none",
                         "&:hover": {
-                          textDecoration: "underline",
                           color: "#00e5ff",
+                          textDecoration: "underline",
                         },
                       }}
                     >
@@ -184,10 +190,9 @@ export default function Content({ params }) {
                         color: "#b2ebf2",
                         fontSize: { xs: "1rem", sm: "1.2rem" },
                         textShadow: "0 0 10px rgba(0,229,255,0.3)",
-                        textDecoration: "none",
                         "&:hover": {
-                          textDecoration: "underline",
                           color: "#00e5ff",
+                          textDecoration: "underline",
                         },
                       }}
                     >
@@ -195,7 +200,17 @@ export default function Content({ params }) {
                     </Typography>
                   </Box>
                 ) : (
-                  item
+                  <Typography
+                    sx={{
+                      color: "#d0f8ff",
+                      fontSize: "1.2rem",
+                      fontWeight: 500,
+                      letterSpacing: "0.5px",
+                      textShadow: "0 0 12px rgba(0,229,255,0.25)",
+                    }}
+                  >
+                    {item}
+                  </Typography>
                 )
               }
             />
@@ -204,24 +219,36 @@ export default function Content({ params }) {
       </List>
 
       <motion.div
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.06 }}
         whileTap={{ scale: 0.95 }}
-        transition={{ type: "spring", stiffness: 250 }}
+        transition={{ type: "spring", stiffness: 240 }}
       >
         <Button
           startIcon={<ArrowBack />}
           component={Link}
           href="/"
-          style={{
+          sx={{
             marginTop: "2rem",
-            padding: "0.8rem 2rem",
+            padding: "0.8rem 2.3rem",
             border: "2px solid #00e5ff",
-            borderRadius: "12px",
+            borderRadius: "14px",
             color: "#00e5ff",
-            fontWeight: "600",
-            textDecoration: "none",
-            boxShadow: "0 0 20px #00e5ff55",
-            zIndex: 2,
+            background: "rgba(0,0,0,0.45)",
+            fontWeight: 600,
+            textTransform: "none",
+            fontSize: "1.1rem",
+            boxShadow: "0 0 18px rgba(0,229,255,0.4)",
+            transition: "0.3s ease",
+            "&:hover": {
+              boxShadow: "0 0 35px rgba(0,229,255,0.7)",
+              transform: "translateY(-3px)",
+            },
+            "& .MuiButton-startIcon": {
+              transition: "transform 0.3s ease",
+            },
+            "&:hover .MuiButton-startIcon": {
+              transform: "translateX(-6px)",
+            },
           }}
         >
           Back to Home
