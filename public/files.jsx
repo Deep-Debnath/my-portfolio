@@ -2,6 +2,7 @@
 import {
   ContactPage,
   Download,
+  Handyman,
   Lan,
   MessageSharp,
   Pages,
@@ -10,76 +11,6 @@ import {
   Work,
 } from "@mui/icons-material";
 
-export const contentData = [
-  {
-    id: "0",
-    title: "About",
-    icon: <Person sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
-    items: [
-      "Hi, I'm Deep Debnath.",
-      "Frontend Developer from West Bengal.",
-      "Passionate about React, UI animation, and clean, modern interfaces.",
-    ],
-  },
-  {
-    id: "1",
-    title: "Projects",
-    icon: <Work sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
-    items: [
-      {
-        text: (
-          <>
-            <ShoppingCart className="mr-1" /> New-E-Cart
-          </>
-        ),
-        link: "https://new-e-cart.vercel.app/",
-      },
-      {
-        text: (
-          <>
-            <MessageSharp className="mr-1" /> Gemini Chat App
-          </>
-        ),
-        link: "https://gemini-clone-5csw.vercel.app/",
-      },
-      {
-        text: (
-          <>
-            <Lan className="mr-1" /> Workflow App
-          </>
-        ),
-        link: "https://workflow-gilt-five.vercel.app/",
-      },
-    ],
-  },
-  {
-    id: "2",
-    title: "Resume",
-    icon: <Pages sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
-    items: [
-      {
-        text: (
-          <>
-            <Download className="mr-1" /> Get My Resume
-          </>
-        ),
-        link: "/Deep_Debnath_Resume.pdf",
-      },
-    ],
-  },
-  {
-    id: "3",
-    title: "Contact",
-    icon: <ContactPage sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
-    items: [
-      {
-        text: "deepdebnath7432@gmail.com",
-        link: "mailto:deepdebnath7432@gmail.com",
-      },
-      { text: "+91 9883837801", link: "tel:+919883837801" },
-    ],
-  },
-];
 
 import {
   SiHtml5,
@@ -175,6 +106,85 @@ export const skillsData = [
     info: "Code hosting and collaboration platform",
   },
 ];
+
+export const contentData = [
+  {
+    id: "0",
+    title: "About",
+    icon: <Person sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
+    items: [
+      "Hi, I'm Deep Debnath.",
+      "Frontend Developer from West Bengal.",
+      "Passionate about React, UI animation, and clean, modern interfaces.",
+    ],
+  },
+  {
+    id: "1",
+    title: "Skills",
+    icon: <Handyman sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
+    items: skillsData, // not compulsory
+    mobileOnly: true,
+  },
+  {
+    id: "2",
+    title: "Projects",
+    icon: <Work sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
+    items: [
+      {
+        text: (
+          <>
+            <ShoppingCart className="mr-1" /> New-E-Cart
+          </>
+        ),
+        link: "https://new-e-cart.vercel.app/",
+      },
+      {
+        text: (
+          <>
+            <MessageSharp className="mr-1" /> Gemini Chat App
+          </>
+        ),
+        link: "https://gemini-clone-5csw.vercel.app/",
+      },
+      {
+        text: (
+          <>
+            <Lan className="mr-1" /> Workflow App
+          </>
+        ),
+        link: "https://workflow-gilt-five.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: "3",
+    title: "Resume",
+    icon: <Pages sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
+    items: [
+      {
+        text: (
+          <>
+            <Download className="mr-1" /> Get My Resume
+          </>
+        ),
+        link: "/Deep_Debnath_Resume.pdf",
+      },
+    ],
+  },
+  {
+    id: "4",
+    title: "Contact",
+    icon: <ContactPage sx={{ fontSize: { sm: "3rem", xs: "2rem" } }} />,
+    items: [
+      {
+        text: "deepdebnath7432@gmail.com",
+        link: "mailto:deepdebnath7432@gmail.com",
+      },
+      { text: "+91 9883837801", link: "tel:+919883837801" },
+    ],
+  },
+];
+
 export const buttons = [
   {
     icon: <SiGithub size={22} />,

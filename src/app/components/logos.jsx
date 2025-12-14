@@ -33,7 +33,7 @@ export default function Logo() {
             transition="transition"
             className="hidden md:block text-xl lg:text-2xl font-semibold text-cyan-300 mb-4 text-center"
           >
-            Skills & Technologies <ArrowDownward />
+            Skills & Technologies
           </motion.h3>
           <motion.div
             variants={parent}
@@ -63,7 +63,7 @@ export default function Logo() {
           </motion.div>
         </>
 
-        <div className="md:hidden fixed bottom-30 left-0 right-0 flex flex-col items-center justify-center">
+        {/* <div className="md:hidden fixed bottom-30 left-0 right-0 flex flex-col items-center justify-center">
           <motion.h3
             variants={h2}
             initial="hidden"
@@ -99,7 +99,7 @@ export default function Logo() {
               </Tooltip>
             ))}
           </motion.div>
-        </div>
+        </div> */}
       </div>
     </>
   );

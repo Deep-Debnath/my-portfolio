@@ -8,11 +8,12 @@ import {
   Typography,
   Box,
   Button,
+  Tooltip,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { AlternateEmail, ArrowBack, Smartphone } from "@mui/icons-material";
 import Link from "next/link";
-import { contentData } from "../../../../public/files";
+import { contentData, skillsData } from "../../../../public/files";
 
 export default function Content({ params }) {
   const contentId = React.use(params).id;
@@ -141,7 +142,7 @@ export default function Content({ params }) {
           >
             <ListItemText
               primary={
-                section.id === "3" ? (
+                section.id === "4" ? (
                   <Box
                     sx={{
                       display: "flex",
@@ -163,7 +164,7 @@ export default function Content({ params }) {
                     )}
                     {item.text}
                   </Box>
-                ) : section.id === "1" ? (
+                ) : section.id === "2" ? (
                   <Box component={Link} href={item.link}>
                     <Typography
                       sx={{
@@ -179,7 +180,7 @@ export default function Content({ params }) {
                       {item.text}
                     </Typography>
                   </Box>
-                ) : section.id === "2" ? (
+                ) : section.id === "3" ? (
                   <Box
                     component={Link}
                     href={item.link}
@@ -199,6 +200,37 @@ export default function Content({ params }) {
                       {item.text}
                     </Typography>
                   </Box>
+                ) : section.id === "1" ? (
+                  <Tooltip arrow placement="top" title={item.info}>
+                    <div
+                      className="
+                    flex items-center gap-3
+                    px-4 py-2
+                    rounded-lg
+                    bg-cyan-900/20
+                    border border-cyan-500/20
+                    hover:border-cyan-400
+                    hover:bg-cyan-900/30
+                    transition-all duration-300
+                    cursor-pointer
+                    shadow-md hover:shadow-cyan-500/20"
+                    >
+                      <item.Icon
+                        size={30}
+                        style={{ color: item.color }}
+                        className="drop-shadow-[0_0_6px_rgba(0,99,77)]"
+                      />
+
+                      <div
+                        className="
+                      text-sm font-medium
+                      text-cyan-100
+                      tracking-wide"
+                      >
+                        {item.name}
+                      </div>
+                    </div>
+                  </Tooltip>
                 ) : (
                   <Typography
                     sx={{
