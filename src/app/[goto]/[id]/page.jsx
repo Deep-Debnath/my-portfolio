@@ -13,7 +13,7 @@ import {
 import { motion } from "framer-motion";
 import { AlternateEmail, ArrowBack, Smartphone } from "@mui/icons-material";
 import Link from "next/link";
-import { contentData, skillsData } from "../../../../public/files";
+import { contentData } from "../../../../public/files";
 
 export default function Content({ params }) {
   const contentId = React.use(params).id;
@@ -38,10 +38,10 @@ export default function Content({ params }) {
 
   return (
     <Box
-      component={motion.div}
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
+      // component={motion.div}
+      // initial={{ opacity: 0, y: 40 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // transition={{ duration: 0.7 }}
       sx={{
         minHeight: "100vh",
         width: "100%",
@@ -71,7 +71,7 @@ export default function Content({ params }) {
           top: "12%",
           left: "50%",
           transform: "translateX(-50%)",
-          filter: "blur(80px)",
+          // filter: "blur(80px)",
           zIndex: 0,
         }}
       />
@@ -130,7 +130,7 @@ export default function Content({ params }) {
               borderRadius: "14px",
               mb: 2.5,
               p: 2.2,
-              backdropFilter: "blur(8px)",
+              // backdropFilter: "blur(8px)",
               boxShadow: "0 0 12px rgba(0,229,255,0.25)",
               transition: "0.3s ease",
               "&:hover": {
